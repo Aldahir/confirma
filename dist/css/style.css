@@ -1,0 +1,210 @@
+:root {
+    --blueDark: #002a78;
+    --blue700: #214e96;
+    --blueNavy: #2594fd;
+    --blue400: #277dff;
+    --blueLight: #e0f0ff;
+
+    --greenDark:#2E7D32;
+    --greenNormal:#4CAF50;
+    --greenLight:#C8E6C9;
+
+    --black:black;
+    --grayDark:grey;
+    --gray:#a9a9a9;
+    --grayLight:#d3d3d3;
+    --white:#ffffff;
+
+    --redDark:#9d0d03;
+    --red:#ff2b1b;
+    --redLight:#ff8077;
+
+    --marginTop: 1em;
+    --mainPadding: 0.7rem;
+
+    --mainFontWeight: 700;
+    --fontWeight: 500;
+
+    --titleSize:1.15rem;
+    --subtitleSize:0.8rem;
+    --textSize:0.65rem;
+}
+
+
+
+.dark-blue{ background-color: var(--blueDark); }
+.navy-blue{ background-color: var(--blueNavy); }
+.navy-dark-blue{ background-color: var(--blue400); }
+.dark-light-blue{ background-color: var(--blue700); }
+.light-navy-blue{ background-color: var(--blueLight); }
+
+.dark-green{ background-color: var(--greenDark); }
+.normal-green{ background-color: var(--greenNormal); }
+.light-green{ background-color: var(--greenLight); }
+
+.bg-red{ background-color: var(--red); }
+.bg-light-red{ background-color: var(--redLight); }
+.bg-dark-red{ background-color: var(--redDark); }
+
+/* TEXT COLOR */
+
+.text-green {color: var(--greenNormal);}
+.text-light-green {color: var(--greenLight);}
+.text-dark-green {color: var(--greenDark);}
+
+.text-blue{color: var(--blueNavy);}
+.text-light-blue{color: var(--blueLight);}
+.text-dark-blue{color: var(--blueDark);}
+
+.text-gray{color: var(--gray);}
+.text-light-gray{color: var(--grayDark);}
+.text-dark-gray{color: var(--grayLight);}
+
+.text-red{color: var(--red);}
+.text-light-red{color: var(--redLight);}
+.text-dark-red{color: var(--redDark);}
+
+
+/* Titulo */
+
+.title {
+    font-weight: var(--mainFontWeight);
+    font-size: var(--subtitleSize);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    color: var(--black);
+}
+
+.subtitle {
+    font-size: var(--subtitleSize);
+    font-weight: var(--fontWeight);
+    color: var(--gray);
+    line-height: 1;
+}
+
+.transacao-data {font-size: var(--textSize);}
+
+.transacao-title {
+    margin-bottom: 0.4rem;
+    font-size: var(--subtitleSize);
+}
+
+.beneficiario-img { max-width: 45px; }
+.account-id {
+    font-weight: var(--fontWeightNormal, normal);
+}
+.list {margin-top: var(--marginTop);}
+.list:first-child{
+    margin:unset!important;
+}
+.rounded-4 {  border-radius: 1rem!important; }
+
+.action-button a {
+    font-weight: var(--fontWeight);
+    font-size: var(--textSize);
+}
+
+.text-light-green:hover {
+    color: var(--greenDark);
+    text-decoration: none;
+}
+
+.text-light-blue:hover {
+    color: var(--blueDark);
+    text-decoration: none;
+}
+
+
+.text-light-red:hover {
+    color: var(--redDark);
+    text-decoration: none;
+}
+
+.btn-blue {
+    font-size: var(--textSize);
+    color: #fff;
+    background-color: var(--blue700);
+    border-color: var(--blue700);
+}
+
+.btn-blue:hover {
+    color: var(--blueLight) !important;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-circle a {text-decoration: none;}
+
+.navbar {
+    flex-wrap: unset !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+    padding-top: inherit !important;
+    padding-bottom: inherit !important;
+}
+
+.menu .navbar-nav {
+    padding: 0;
+    margin: 0;
+}
+.menu .navbar-nav .nav-item:hover {background-color: var(--blue700);}
+.menu .navbar-nav .nav-item:hover .nav-link {color: var(--white); transition: color .5s ease-in-out;}
+.menu .navbar-nav .nav-item .nav-link{
+    color:var(--blue700)
+}
+.menu .navbar-nav .nav-item.active{
+    background-color: var(--blue700);
+}
+.menu .navbar-nav .nav-item.active .nav-link{
+    color:var(--white);
+}
+
+.valor{
+    font-size: var(--textSize);
+}
+
+.text-gray:hover{
+    color:var(--black);
+}
+.link{
+    cursor: pointer;
+    font-size: var(--textSize);
+}
+.atr{
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.095);
+}
+.atr.active{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.no-scroll{
+    overflow: hidden !important;
+}
+
+.hide{
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+}
+.show{
+    display: block !important;
+}
+.historico, .settings, .dashboard, .search,
+.consultar{display: none;}
